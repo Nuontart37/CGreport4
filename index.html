@@ -49,12 +49,12 @@
     //mat.map = jimen;
     
     // 平面を作成
-    var planeGeometry = new THREE.CircleGeometry(30,5);
+    var CircleGeometry = new THREE.CircleGeometry(30,5);
     var planeMaterial = new THREE.MeshBasicMaterial({color: 0x00ff00});
-    var plane = new THREE.Mesh(planeGeometry,planeMaterial);
+    var jimen = new THREE.Mesh(planeGeometry,planeMaterial);
     jimen.receiveShadow = true;
-    plane.rotation.set( -Math.PI/2, 0, 0 );
-    plane.position.set(0,0,0);
+    jimen.rotation.set( -Math.PI/2, 0, 0 );
+    jimen.position.set(0,0,0);
     scene.add(jimen)
   
   // バンプマップ読み込み
